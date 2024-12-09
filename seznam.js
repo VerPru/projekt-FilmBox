@@ -106,20 +106,20 @@ const filmy = [
 ]
 
 //Bonus k ukolu 4 Pridani filmu
-const Bridgetons = {
-    id: "Bridgetons",
-    nazev: "Bridgetonovi",
+const Sharkando = {
+    id: "Sharkando",
+    nazev: "Žralokonádo",
     plakat: {
-        url: 'https://m.media-amazon.com/images/I/91jzOPvXK0L._AC_SL1500_.jpg',
+        url: 'https://ucm.one/wp-content/uploads/2023/11/C-Sharknado-10th-Anniversary.jpg',
         sirka: 663,
         vyska: 820,
     },
-    ochutnavka: 'Nová řada populárního seriálu',
-    popis: 'Každá z letošních debutantek se chce stát hlavní hvězdou plesu. Nevýrazná mladá dáma, co žije dvojím životem, ve světě tajností a překvapení úplně rozkvete.',
-    premiera: '2024-05-10',
+    ochutnavka: 'Nejlepší film všech dob',
+    popis: 'Do Los Angeles se blíží bouře, jakou ještě svět neviděl. Bouře totiž způsobí, že žraloci, kteří do této chvíle požírali lidi jen v oceánu, se nyní objevují i ve vzduchu a na souši. Jak si lidstvo poradí s touto katastrofou? ',
+    premiera: '2013-05-10',
 };
 
-filmy.push(Bridgetons);
+filmy.push(Sharkando);
 
 //Ukol 4 
 //Seznam filmu
