@@ -104,3 +104,48 @@ const filmy = [
 		premiera: '2022-12-24',
 	},
 ]
+
+//Bonus k ukolu 4 Pridani filmu
+const Bridgetons = {
+    id: "Bridgetons",
+    nazev: "Bridgetonovi",
+    plakat: {
+        url: 'https://m.media-amazon.com/images/I/91jzOPvXK0L._AC_SL1500_.jpg',
+        sirka: 663,
+        vyska: 820,
+    },
+    ochutnavka: 'Nová řada populárního seriálu',
+    popis: 'Každá z letošních debutantek se chce stát hlavní hvězdou plesu. Nevýrazná mladá dáma, co žije dvojím životem, ve světě tajností a překvapení úplně rozkvete.',
+    premiera: '2024-05-10',
+};
+
+filmy.push(Bridgetons);
+
+//Ukol 4 
+//Seznam filmu
+const seznamFilmu = document.querySelector('#seznam-filmu');
+
+
+if (seznamFilmu) {
+    seznamFilmu.innerHTML = ''; // vymaze vnitrni HTML,aby byl prazdny
+// Projde vsechny filmy a prida HTML pro kazdy film
+    filmy.forEach((film) => {
+        seznamFilmu.innerHTML += `
+            <div class="col">
+                <div class="card h-100 d-flex flex-column justify-content-between ">
+				<img 
+				     src="${film.plakat.url}" 
+					 width="${film.plakat.sirka}"
+					height="${film.plakat.vyska}"
+                    class="card-img-top flex-grow-1" 
+                        alt="plakát"
+					/>
+					<div class="cardcard-body flex-grow-0 flex-shrink-0 mt-auto">
+                        <h5 class="card-title">${film.nazev}</h5>
+                        <p class="card-text">${film.ochutnavka}</p>
+                        <a href="film.html#${film.id}" class="btn btn-primary">Přehrát</a>
+                    </div>
+                </div>
+            </div>`;
+    });
+}
